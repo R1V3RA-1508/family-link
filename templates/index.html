@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Link</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="main">
+        <div class="welcome-wrap">
+            <h1 class="welcome">Добро пожаловать в панель управления!</h1>
+        </div>
+        <div class="root-enter-wrap">
+            <h1 class="root-enter">Введите root-пароль:</h1>
+            <div class="pass-field">
+                {{ form.hidden_tag() }}
+                <form action="" method="post" style="display: flex; flex-direction: row;">
+                    <input type="password" name="pass" id="rootPass">
+                    <input type="submit" value="Login" name="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
