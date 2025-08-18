@@ -47,7 +47,7 @@ def dashboard():
         # return jsonify({"status": "Разблокирован"})
 
     if form.validate_on_submit and 'lock' in request.form:
-        subprocess.Popen('C:/Users/Nikita/Documents/family-link/build/exe.win-amd64-3.13/SystemLocker.exe')
+        subprocess.Popen('build/exe.win-amd64-3.13/SystemLocker.exe')
         return redirect('dashboard')
     elif form.validate_on_submit and 'unlock' in request.form:
         os.system('taskkill /im SystemLocker.exe* /f')
