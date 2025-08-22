@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="main">
-        <h1>Панель управления</h1>
+        <h1 class="welcome-wrap" id="dashboard-title">Панель управления</h1>
         <div class="pass-field" style="display: flex; flex-direction: column">
             <h2 class="status">Состояние: <span id="status">{{status}}</span></h2>
             {{ form.hidden_tag() }}

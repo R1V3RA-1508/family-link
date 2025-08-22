@@ -1,28 +1,70 @@
 h1, h2{
     font-family: Arial;
     justify-content: center;
-    color: black;
+    color: whitesmoke;
     font-size: 2rem;
 }
-.welcome-wrap{
-    display: flex;
-    justify-content: center;
-}
-.main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#dashboard-title{
+    font-size: 3rem;
 }
 .root-enter{
     margin-top: 20vh;
 }
+.root-enter-wrap{
+    margin-left: 11vw
+}
 #rootPass{
-    width: 100%;
+    width: 264px;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 .pass-field{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 0.75rem;
+}
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.status{
+    text-align: center;
+    margin-top: 20vh;
+}
+#lock, #unlock, #login, #rootPass{
+    border: solid white 1px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    padding: 8px;
+}
+#lock:hover, #unlock:hover, #login:hover, #rootPass:hover{
+    border: solid gray 1px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    padding: 8px;
+}
+#lock:active, #unlock:active, #login:active, #rootPass:active{
+    border: solid darkgray 1px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    transition: 0.5s;
+}
+#rootPass:focus{
+    border: none;
+    outline: solid snow 1px;
 }
