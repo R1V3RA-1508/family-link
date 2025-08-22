@@ -11,7 +11,7 @@ h1, h2{
     margin-top: 20vh;
 }
 .root-enter-wrap{
-    margin-left: 11vw
+    justify-content: center;
 }
 #rootPass{
     width: 264px;
@@ -29,6 +29,11 @@ h1, h2{
 body{
     background: black;
     display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -67,4 +72,10 @@ body{
 #rootPass:focus{
     border: none;
     outline: solid snow 1px;
+}
+@media screen and (max-width: 400px){
+    #lock, #unlock{
+        width: 45vw;
+        font-size: 0.7rem
+    }
 }
